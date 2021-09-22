@@ -1,4 +1,4 @@
-# **Frequent Flyer Rewards Calculator Application for Azure Blockchain Workbench**
+# **The Lottery Smart Contract - Planning and Design**
 
 ## **Lottery algorithm:**
 1. The lottery starts by accepting ETH transactions. Anyone having an Ethereum wallet can 
