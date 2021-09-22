@@ -30,9 +30,12 @@
 ● An Event is declared using the event keyword and by convention its name starts with an uppercase letter.
 
 // declare an Event
+
 event Transfer(address _to, uint _value);
 
 ● Events are emitted inside setter functions using emit followed by the name of the event.
+
 // emit an Event
+
 emit Transfer(_to, msg.value);
 
