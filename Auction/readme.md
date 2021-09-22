@@ -24,19 +24,29 @@ withdraws their own amount;
 # **The Auction Contract - The placeBid() function**
 
 bids[0x123…] = 40
+
 bids[0xabc…] = 70
+
 bidIncrement = 10
+
 highestBidder = 0xabc… 
+
 highestBindingBid = 50
+
 ......................................
+
 0x123... is sending 100 wei
+
 bids[0x123…] = 40 + 100= 140
+
 highestBindingBid = min(140, 70+10) = 80
 
 # **Withdrawal Pattern**
 
 ● We don’t proactively send back the funds to the users that didn't win the auction. We’ll 
 use the “withdrawal pattern” instead. 
+
 ● We should only send ETH to a user when he explicitly requests it.
+
 ● This is the “withdrawal” pattern and helps us avoiding re-entrance attacks that could 
 cause unexpected behavior, including catastrophic financial loss for the users;
